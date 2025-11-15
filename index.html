@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickVIN - Instant Vehicle History Reports</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-indigo-600">🚗 QuickVIN</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-indigo-600">Features</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-indigo-600">Pricing</a>
+                    <a href="#how-it-works" class="text-gray-700 hover:text-indigo-600">How It Works</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Know Your Car's Complete History
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-indigo-100">
+                    Get instant vehicle reports in seconds. Avoid costly surprises before you buy.
+                </p>
+                
+                <!-- VIN Input Form -->
+                <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-2xl p-8">
+                    <form id="vinForm" class="space-y-4">
+                        <div>
+                            <label for="vinInput" class="block text-left text-gray-700 font-semibold mb-2">
+                                Enter Your VIN Number
+                            </label>
+                            <input 
+                                type="text" 
+                                id="vinInput" 
+                                placeholder="e.g., 1HGBH41JXMN109186"
+                                maxlength="17"
+                                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-indigo-600 focus:outline-none text-gray-800 text-lg"
+                                required
+                            >
+                            <p class="text-left text-sm text-gray-500 mt-1">17-character vehicle identification number</p>
+                        </div>
+                        <button 
+                            type="submit"
+                            class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-200 transform hover:scale-105"
+                        >
+                            Get Vehicle Report - $9.99
+                        </button>
+                    </form>
+                    <p class="text-gray-600 text-sm mt-4">✓ Instant delivery • ✓ Secure payment • ✓ Money-back guarantee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+                What You'll Discover
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">📋</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Complete Vehicle History</h3>
+                    <p class="text-gray-600">Accident records, title information, and ownership history all in one report.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">🔍</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Detailed Specifications</h3>
+                    <p class="text-gray-600">Engine details, safety ratings, fuel efficiency, and manufacturer specifications.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">💰</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Market Value Estimate</h3>
+                    <p class="text-gray-600">Know if you're getting a fair deal with current market value analysis.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">🛡️</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Theft & Salvage Check</h3>
+                    <p class="text-gray-600">Verify the vehicle isn't stolen or has a salvage title.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">🔧</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Recall Information</h3>
+                    <p class="text-gray-600">Stay informed about manufacturer recalls and safety issues.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">⚡</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Instant Results</h3>
+                    <p class="text-gray-600">Receive your comprehensive report within seconds of payment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">
+                Simple, Transparent Pricing
+            </h2>
+            <p class="text-center text-gray-600 mb-12 text-lg">One report, one price. No hidden fees.</p>
+            
+            <div class="max-w-md mx-auto bg-white rounded-xl shadow-xl overflow-hidden border-4 border-indigo-600">
+                <div class="bg-indigo-600 text-white text-center py-4">
+                    <span class="text-sm font-semibold uppercase">Most Popular</span>
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Single Report</h3>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-indigo-600">$9.99</span>
+                        <span class="text-gray-600">/report</span>
+                    </div>
+                    <ul class="text-left space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">Full vehicle history report</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">Accident & damage records</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">Title & ownership history</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">Market value estimate</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">Recall information</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">Instant PDF delivery</span>
+                        </li>
+                    </ul>
+                    <a href="#vinForm" class="block w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-200">
+                        Get Started Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+                How It Works
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-indigo-600">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Enter VIN</h3>
+                    <p class="text-gray-600">Type in the 17-character VIN number found on the vehicle.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-indigo-600">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Secure Payment</h3>
+                    <p class="text-gray-600">Pay $9.99 using our secure payment system.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-indigo-600">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Get Report</h3>
+                    <p class="text-gray-600">Receive your comprehensive vehicle report instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Ready to Check Your Vehicle?
+            </h2>
+            <p class="text-xl mb-8 text-indigo-100">
+                Don't buy a car blind. Get the full story in seconds.
+            </p>
+            <a href="#vinForm" class="inline-block bg-white text-indigo-600 font-bold py-4 px-8 rounded-lg text-lg hover:bg-gray-100 transition duration-200 transform hover:scale-105">
+                Get Your Report Now - $9.99
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">QuickVIN</h3>
+                    <p class="text-gray-400">Your trusted source for instant vehicle history reports.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">About Us</a></li>
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Email: support@quickvin.com</li>
+                        <li>24/7 Customer Service</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 QuickVIN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handler
+        document.getElementById('vinForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const vin = document.getElementById('vinInput').value.toUpperCase();
+            
+            // Basic VIN validation
+            if (vin.length !== 17) {
+                alert('Please enter a valid 17-character VIN number.');
+                return;
+            }
+            
+            // This is where payment integration will go
+            alert('VIN: ' + vin + '\n\nNext step: This will redirect to payment page (Stripe integration coming next!)');
+            
+            // In production, this would redirect to payment:
+            // window.location.href = '/checkout?vin=' + vin;
+        });
+    </script>
+</body>
+</html>
